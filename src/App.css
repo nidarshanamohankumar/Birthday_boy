@@ -1721,23 +1721,43 @@ button {
   box-shadow: 0 15px 35px rgba(190, 117, 145, 0.2);
 }
 
+/* MEMORY IMAGE FRAME */
+
 .memory-image-frame {
   position: relative;
+
   width: 100%;
-  height: 270px;
+  height: auto;
+
+  min-height: 270px;
+
   padding: 10px;
+
   background: white;
+
   border-radius: 20px;
+
   overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* MEMORY IMAGE */
 
 .memory-image-frame img {
+  display: block;
+
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+
+  max-height: 500px;
+
+  object-fit: contain;
+
   border-radius: 14px;
 }
-
 .memory-heart {
   position: absolute;
   right: 20px;
@@ -2102,6 +2122,248 @@ button {
   font-size: 11px;
   letter-spacing: 3px;
   text-align: center;
+}
+/* =================================
+   ONE LAST SURPRISE PAGE
+================================= */
+
+.surprise-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 35px 25px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #fff0f5,
+    #ffe0eb,
+    #fff5f8
+  );
+  border-radius: 25px;
+}
+
+/* SURPRISE CONTENT */
+
+.surprise-content {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+/* CHAPTER LABEL */
+
+.surprise-label {
+  color: #c47791;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+/* HEART ANIMATION */
+
+.surprise-heart {
+  font-size: 65px;
+  margin: 25px 0;
+  display: inline-block;
+  filter: drop-shadow(0 5px 12px rgba(255, 80, 140, 0.3));
+  animation: surpriseHeartbeat 1.2s infinite;
+}
+
+@keyframes surpriseHeartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+
+  60% {
+    transform: scale(1.15);
+  }
+}
+
+/* MAIN HEADING */
+
+.surprise-content > h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 43px;
+  color: #a64d70;
+  margin-bottom: 12px;
+}
+
+.surprise-subtitle {
+  color: #98717f;
+  font-size: 15px;
+}
+
+.surprise-divider {
+  color: #d88ba6;
+  font-size: 20px;
+  margin: 25px 0 35px;
+}
+
+/* FINAL MESSAGE CARD */
+
+.final-message {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 55px 65px;
+  background: #fffdf8;
+  border: 1px solid #f3d5df;
+  border-radius: 18px;
+  box-shadow: 0 15px 45px rgba(174, 102, 130, 0.16);
+  text-align: left;
+  position: relative;
+}
+
+/* DECORATIONS */
+
+.final-decoration {
+  text-align: center;
+  font-size: 30px;
+  color: #d98da8;
+  margin: 15px 0 25px;
+}
+
+/* MESSAGE HEADING */
+
+.final-message > h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  color: #a65373;
+  margin-bottom: 25px;
+}
+
+/* MESSAGE PARAGRAPHS */
+
+.final-message > p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  line-height: 2;
+  color: #725762;
+  margin-bottom: 20px;
+}
+
+/* HIGHLIGHTED MESSAGE */
+
+.final-message .final-highlight {
+  color: #bd6687;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.8;
+  margin: 35px 0;
+  padding: 22px;
+  background: #fff0f5;
+  border-radius: 12px;
+}
+
+/* SIGNATURE */
+
+.final-signature {
+  text-align: right;
+  margin-top: 40px;
+  color: #98717f;
+}
+
+.final-signature p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.final-signature h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.final-signature h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #bd6687;
+  margin-top: 8px;
+}
+
+/* ENDING SECTION */
+
+.surprise-ending {
+  margin: 50px 0 25px;
+  text-align: center;
+  color: #a65373;
+}
+
+.surprise-ending > span {
+  display: inline-block;
+  font-size: 35px;
+  animation: surpriseHeartbeat 1.2s infinite;
+}
+
+.surprise-ending h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  margin: 15px 0;
+}
+
+.surprise-ending p {
+  color: #98717f;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.surprise-ending div {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #c47791;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+  .surprise-page {
+    padding: 25px 15px;
+  }
+
+  .surprise-content > h1 {
+    font-size: 30px;
+  }
+
+  .surprise-heart {
+    font-size: 50px;
+  }
+
+  .final-message {
+    padding: 35px 25px;
+  }
+
+  .final-message > p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .final-message .final-highlight {
+    font-size: 17px;
+    padding: 15px;
+  }
+
+  .final-signature h1 {
+    font-size: 27px;
+  }
+
+  .surprise-ending h2 {
+    font-size: 22px;
+  }
+
 }
 
 /* RESPONSIVE DESIGN */

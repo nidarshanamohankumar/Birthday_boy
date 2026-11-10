@@ -4,7 +4,17 @@ import "./App.css";
 
 import mainImage from "./images/dudu-bubu-main.jpg";
 import nextImage from "./images/dudu-bubu-love.jpg";
-
+import firstimage from "./images/1.jpeg";
+import secondimage from "./images/2.jpeg";
+import thirdimage from "./images/3.jpeg";
+import fourthimage from "./images/4.jpeg";
+import fifthimage from "./images/5.jpeg";
+import sixthimage from "./images/6.jpeg";
+import seventhimage from "./images/7.jpeg";
+import eightimage from "./images/8.jpeg";
+import ninthimage from "./images/9.jpeg";
+import tenthimage from "./images/10.jpeg";
+import eleventhimage from "./images/11.jpeg";
 function App() {
   const [entered, setEntered] = useState(false);
   const [selectedSection, setSelectedSection] = useState(null);
@@ -84,18 +94,61 @@ function App() {
 const memories = [
   {
     id: 1,
-    image: mainImage,
-    date: "25 MAY 2026",
-    title: "The Day Everything Began",
-    caption: "A new beginning that became a beautiful memory. ♡"
+    image: firstimage,
+    title: "First picture of us",
+    caption: "Namma rendu perum first first yadutha photo ethu thaa. ♡"
   },
   {
     id: 2,
-    image: nextImage,
-    date: "06 JUNE 2026",
-    title: "The Ice Cream Moment",
-    caption: "One little ice cream conversation started our journey. 💗"
-  }
+    image: secondimage,
+    title: "Oru first meet up",
+    caption: "Namma rendu perum first time meet panumbothu yadutha picture with some shyness . 💗"
+  },
+  {
+    id: 3,
+    image: thirdimage,
+    title: "Same day with some smile",
+    caption: "Konjam photos la yadutha apro comfortable aana apro yadutha picture. 💗"
+  },
+  {
+    id: 4,
+    image: fourthimage,
+    title: "First ride with you",
+    caption: "Na bike drive panni nee enaku pinadi ukanthu pesite vantha chello. 💗"
+  },
+  {
+    id: 7,
+    image: seventhimage,
+    title: "The Gift you gave mee",
+    caption: "Enoda birthday ku nee kudutha gift, semma sanda potom anaiku and semma and nee aasapatta nee tha entha watch aa enaku potu vidanum nu athe maari nadanthuchu. 💗"
+  },
+  {
+    id: 5,
+    image: fifthimage,
+    title: "Oru love story begins here",
+    caption: "Namma rendu perum namma love aa sonna apro pona first place entha kovil thaa. And na unmela saanja unaku oru maari aachu and I felt too comfortable athanala naa saanja appo nee sonna eva enna romba namburaa pola apdinu. 💗"
+  },
+ 
+  
+  {
+    id: 8,
+    image: eightimage,
+    title: "Tears",
+    caption: "Oru wallpaper ku rendu perum sanda pottu moonjiya thookitu and aanalum paravala meet panalam nu solit rendu perum sernthu kovil ku poi angayu sanda potom and athuku apro naa normal aagita aana nee agala chello 💗"
+  },
+ 
+  {
+    id: 10,
+    image: tenthimage,
+    title: "Time",
+    caption: "Entha gift enaku romba romba special because nee kuduthaa first gift ethuu. And etha story la potutu ya moochava pechava song potruntha and oru quote write paniruntha - This is the hand I always wants to hold athu maari.. 💗"
+  },
+  {
+    id: 11,
+    image: eleventhimage,
+    title: "Twinning with you",
+    caption: "Namma rendu perum sernthu nethu suthuno and we are twinning athu enaku pudichirunthu neraiya pesala but we were together nethu fulla athu nalla erunthuchu maa 💗"
+  },
 ];
 // WHY YOU ARE SPECIAL CONTENT
 
@@ -242,6 +295,7 @@ const specialReasons = [
           </motion.div>
 
         ) : (
+          
 
           <AnimatePresence mode="wait">
 
@@ -340,6 +394,117 @@ const specialReasons = [
               </motion.div>
 
             ) :
+            selectedSection.id === 5 ? (
+
+  /* ONE LAST SURPRISE PAGE */
+
+  <motion.div
+    key="surprise"
+    className="surprise-page"
+    initial={{ opacity: 0, y: 35 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -25 }}
+    transition={{ duration: 0.6 }}
+  >
+
+    <button
+      className="back-button"
+      onClick={() => setSelectedSection(null)}
+    >
+      ← BACK TO OUR WORLD
+    </button>
+
+    <div className="surprise-content">
+
+      <span className="surprise-label">
+        ✧ CHAPTER FIVE ✧
+      </span>
+
+      <div className="surprise-heart">
+        💗
+      </div>
+
+      <h1>One Last Surprise ♡</h1>
+
+      <p className="surprise-subtitle">
+        A little something from my heart to you.
+      </p>
+
+      <div className="surprise-divider">
+        ♡ ───── ✧ ───── ♡
+      </div>
+
+      {/* FINAL MESSAGE CARD */}
+
+      <motion.div
+        className="final-message"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+      >
+
+        <div className="final-decoration">🌷</div>
+
+        <h2>Dear Subash, 💗</h2>
+
+        <p>
+         I lovee youuuuuuuuuuuuuuuuuuuuu so much 💗🤍😘
+        </p>
+        <p>
+          This is for my Dada, Enaku appa ellangra feel vara koodathunu nee paathu paathu pandra paa. And namma partners aa erunthalum kooda naa unoda ponnu and nee enoda appa apditha erukuu.. I am always your chella magal and namaku kolandha vanthaalum naan tha unoda first ponnu solitaa okwaa and as a little daughter of you , I love you so much dadaaaaa...        </p>
+
+        <p>
+          Sollanum nu nenachathu yallame solitaa paaa. Unna special aa feel panna vekanum nu nenacha atha pandra unaku pudikumaanu theriyala chello...
+        </p>
+
+       
+
+        <p className="final-highlight">
+          Nee yappoyu happya erukanum and na yappoyu unkooda tha erupaa chello and nee enna panalum na support panuva unoda success enoda success nee happya erunthaa naanu happya erupaa and the end be happy avlotha chello💗🤍😘
+          I lovee you to the moon and back subashhhh💗🤍😘💗🤍😘
+        </p>
+
+        <div className="final-signature">
+          <p>Always keep smiling!</p>
+          <h2>With love,</h2>
+          <h1>Papa💗🤍</h1>
+        </div>
+
+        <div className="final-decoration">
+          ✧ ♡ ✧
+        </div>
+
+      </motion.div>
+
+      {/* ENDING MESSAGE */}
+
+      <div className="surprise-ending">
+
+        <span>💗</span>
+
+        <h2>End of this little website...</h2>
+
+        <p>
+          But not the end of our beautiful memories. ♡
+        </p>
+
+        <div>✧ Made with love ✧</div>
+
+      </div>
+
+    </div>
+
+    <button
+      className="back-button bottom-back"
+      onClick={() => setSelectedSection(null)}
+    >
+      ← BACK TO OUR WORLD
+    </button>
+
+  </motion.div>
+
+) : 
+  /* EXISTING FALLBACK */
 
             selectedSection.id === 4 ? (
               /* A LETTER FOR YOU PAGE */
@@ -847,6 +1012,7 @@ const specialReasons = [
               )
 
             )}
+          
 
           </AnimatePresence>
 
